@@ -30,6 +30,14 @@ We have four API's in gulp "gulp.task, gulp.src, gulp.dest, gulp.watch"
 ### gulp.task
 > gulp.task(name, [dep], fn)
 
+When we have to define a new task? Well, we have three cases:
+
+1. Writing tests and linting code
+2. Files optimization(minifycation and concadenating files)
+3. Serving the app
+
+Write your own task:
+
 1. Registers a task name with a function
 2. Optionally declare dependecies
 
@@ -44,6 +52,9 @@ gulp.task('js', function() {
 ```
 The dependencies in "gulp.task" are other tasks, but you need to know some things:
 
+1. The tasks jshint and jscs both run first, then task js runs
+2. Dependency tasks run in parallel, not in sequence
+
 ```javascript
 gulp.task('js', ['jscs', 'jshint'], function() {
 	return gulp
@@ -53,6 +64,3 @@ gulp.task('js', ['jscs', 'jshint'], function() {
 		.pipe(gulp.dest('./build/'))
 })
 ```
-
-1. The tasks jshint and jscs both run first, then task js runs
-2. Dependency tasks run in parallel, not in sequence
