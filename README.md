@@ -64,3 +64,88 @@ gulp.task('js', ['jscs', 'jshint'], function() {
 		.pipe(gulp.dest('./build/'))
 })
 ```
+
+# Projects automation
+
+## 1. Installing packages globally for your project
+
+Run `npm install -g gulp bower` to install gulp and bower globally.
+
+> Tip: run `npm list -g --depth=0` to see all the packages installed globally.
+
+## 2. Installing packages locally, for a project
+
+Run `npm install gulp --save-dev package-name` to save a local package as a devdependency for your projects.
+
+> NOTE: The commnand `--save-dev` saves the package as a devDependencies in the package.json file. And  `--save` saves it as a dependendecie in the package.json file.
+
+### Diferences between packages dependencies
+
+##### Dependencies
+1. Needed at run-time
+2. Examples: -Express, -Angular, -Bootstrap, etc...
+3. Code `npm install --save` and `bower install --save`
+
+##### DevDependencies
+1. Needed during development
+2. Examples: -concat, -jshint, -uglify, -jasmin
+3. Code `npm install --save-dev` and `bower install --save-dev`
+
+## 2.1 Installing gulp locally
+Run `npm install gulp --save-dev`.
+
+Rigth now you have gulp installed in your project, go to your package.json file and check this:
+```javascript
+"devDependencies": {
+    "gulp": "^3.9.1"
+  }
+```
+
+## 3. Create the gulpfile
+
+Create a file called gulpfile.js and write `var gulp = require('gulp');` to import the gulp module to our file.
+
+##### Creating your first task
+
+```javascript
+var gulp = require('gulp');
+
+gulp.task('hello-world', function(){
+    console.log('Our first task!!!!!!!!');
+});
+```
+> You can see the log in your terminal running `gulp hello-world`
+
+## 4. Create your first task
+In our first task, we want to use two popular tool "JSHint and JScs"
+##### JSHint
+1. Javascript code analysis
+2. Detect errors and potencial problems
+
+##### JScs
+1. Javascript code style checker
+2. Enforcing your style guide
+
+## 4.1. Install JSHint and JSCS locally
+Run `npm install gulp-jshint gulp-jscs --save-dev` to install locally.
+Add the jshint and jscs plugins to your gulpfile:
+```javascript
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
+```
+> Use `require` to reference the gulp plugins `var variable = require(module);`
+
+##### Add JSHint and JScs to your task
+```javascript
+gulp.task('vet', function(){
+	log('Hi from my task');
+	return gulp
+		.src(['./src/**/*.js',
+			'./*.js'
+		])
+		.pipe(jscs())
+		.pipe(jshint()) 
+		.pipe(jshint.reporter('jshint-stylish', {verbose: true}));
+});
+```
+> Run `npm install --save-dev jshint-stylish` to install the jshint plugin
