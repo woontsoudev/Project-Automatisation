@@ -1,0 +1,985 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"su",
+				"submitInput"
+			],
+			[
+				"mod",
+				"moduleConfig"
+			],
+			[
+				"hiddenInp",
+				"hiddenInputs"
+			],
+			[
+				"che",
+				"checkBoxConteiner"
+			],
+			[
+				"mode",
+				"modelSelect"
+			],
+			[
+				"ur",
+				"urlModel"
+			],
+			[
+				"model",
+				"models"
+			],
+			[
+				"C",
+				"Chevrolet"
+			],
+			[
+				"Pr",
+				"Prius"
+			],
+			[
+				"bra",
+				"brand"
+			],
+			[
+				"url",
+				"urlMake"
+			],
+			[
+				"ele",
+				"elem_2"
+			],
+			[
+				"o",
+				"outerHTML"
+			],
+			[
+				"input",
+				"inputFile"
+			],
+			[
+				"fo",
+				"form-item"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"new",
+				"newRows"
+			],
+			[
+				"conte",
+				"conteinerOne"
+			],
+			[
+				"for",
+				"formRestructurationModule"
+			],
+			[
+				"col",
+				"col-md-4"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"mo",
+				"moduleConfig"
+			],
+			[
+				"car",
+				"carousell"
+			],
+			[
+				"pho",
+				"photosContainer"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"por",
+				"portLocatorModule"
+			],
+			[
+				"a",
+				"appConfig"
+			],
+			[
+				"bran",
+				"brandContent"
+			],
+			[
+				"port",
+				"portLocatorContent"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"img",
+				"imgPath"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"selected",
+				"selectedBrand"
+			],
+			[
+				"get",
+				"getJSON"
+			],
+			[
+				"produ",
+				"product"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bord",
+				"border-right"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"bor",
+				"border-right"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"data",
+				"dataObj"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padi",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"s",
+				"styleguide"
+			],
+			[
+				"_s",
+				"_site"
+			],
+			[
+				"page",
+				"pageLoaded"
+			],
+			[
+				"ite",
+				"itemTab"
+			],
+			[
+				"v",
+				"viewModel"
+			],
+			[
+				"ob",
+				"ObservableArray"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"frame",
+				"frameModule"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"O",
+				"ObservableArray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 618,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".jshintrc",
+			"settings":
+			{
+				"buffer_size": 1147,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/client/app/customers/customer-detail.controller.js",
+			"settings":
+			{
+				"buffer_size": 1649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 2379,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "jshi",
+		"selected_items":
+		[
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jso",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"package c",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet:ns_",
+				"Snippet: ns_label"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet: ns_",
+				"Snippet: ns_label"
+			],
+			[
+				"Snippet: ns_",
+				"Snippet: ns_snippets"
+			],
+			[
+				"Snippet: ",
+				"Snippet: ns_snippets"
+			],
+			[
+				"pakage",
+				"Package Control: Remove Package"
+			],
+			[
+				"sippet: if",
+				"Snippet: if"
+			],
+			[
+				"Snippet: cd",
+				"Snippet: CDATA"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"clear()",
+			"clear",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa"
+	],
+	"file_history":
+	[
+		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/README.md",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/server/db.json",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/bootstrap/_modal.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/layout/_sidebar.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_includes/scripts.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_modals.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_product-guide.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_port-locator.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_table.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/products_level_3.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_includes/components/vendors/sidebar-slick.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_includes/components/vendors/sidebar-thumb-slick.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_site/public/js/app.min.js",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_thumb-info.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/product_guide.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/how_to_diagrams.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/information_layout_1.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_includes/components/bootstrap/tabbed-carousel.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/videos_layout.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/how_to.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_left-img-cont.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/_components.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/bootstrap/_tabs.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/port_locator.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/home.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_product-advisor.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_testimonials.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/core/_buttons.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/core/_variables.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/forms/_forms.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_includes/components/forms/contact-us.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/contact.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/products_chart.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/grid_4.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/retailer_layout_result.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/retailer_layout.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/testimonials.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/regulatory_info.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/about.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/products_list.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/typical_ac_sys.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/ask_the_pro.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/faqs.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/form_layout_2.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/form_layout.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/grid_3.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/social_feed.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/img/pages/how-to/low_service_port.png",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/fags.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/interior-tips.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/timeline_layout.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/product_advisor.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/how_to_diagrams_tables.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/index.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/_bootstrap.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/page-list.scss",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/gulpfile.js",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_headline.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/_footer.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/tiles/_products.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/custom/_marquee.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/_mainnav.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/_topnav.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_svg/armorall_nav_hamburger.svg",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_svg/armorall_nav_close.svg",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/README.md",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_config.yml",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_template-kss/index.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/gulpfile.js",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_template-kss/public/kss.less",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_site/styleguide/public/kss.less",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_site/styleguide/public/kss.css",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/styleguide.md",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_template-kss/public/kss.css",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/_theme.scss",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/package.json",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_site/styleguide/index.html",
+		"/Users/woont/Desktop/test/kss/mp-recharge-ac-site/frontend/_template-kss/index.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/_layouts/default.html",
+		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/pages/about_us.html",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/home/_home.scss",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/home/b-mobile/i-380.scss",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/home/b-mobile/f-640.scss",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/home/home.tpl.html",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/services/services.tpl.html",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/services/services.js",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/bower.json",
+		"/Users/woont/Desktop/work/Internal/criticalmass.com/frontend/app/pages/news/news.tpl.html",
+		"/Users/woont/Desktop/test/nativescript/telerik-next/sample-TelerikNEXT/app/map-page.js",
+		"/Users/woont/Desktop/test/nativescript/telerik-next/sample-TelerikNEXT/app/map-page.xml",
+		"/Users/woont/Desktop/test/nativescript/myApp/app/main-page.xml",
+		"/Users/woont/Desktop/test/nativescript/myApp/app/main-page.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/README.md",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/bower_components/font-awesome/less/path.less",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/bower_components/font-awesome/less/font-awesome.less",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/www/js/app.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/bower_components/localforage/dist/localforage.min.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/www/js/app.min.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/src/assets/less/app.less",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/src/assets/less/mixins.less",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/src/assets/less/responsive.less",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/config.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/assets/gulpfile.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/src/js/controllers/main_controller.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/src/modules/modules.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/bower_components/angular-localforage/dist/angular-localForage.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/bower_components/localforage/dist/localforage.js",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/assets/bower.json",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/assets/src/html/index.html",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/.gitignore",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/.gitignore",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/www/index.html",
+		"/Users/woont/Desktop/work/daggerwin/daggerwing-hepc-app/app/assets/config.js",
+		"/Users/woont/Desktop/readme.md",
+		"/Users/woont/Desktop/work/daggerwin/app-demo/daggerwing-app/src/html/index.html",
+		"/Users/woont/Desktop/test/phonegap/my_app/src/html/index.html",
+		"/Users/woont/Desktop/work/daggerwin/app-demo/daggerwing-app/bower_components/font-awesome/less/path.less",
+		"/Users/woont/Desktop/test/phonegap/my_app/config.xml",
+		"/Users/woont/Desktop/test/phonegap/my_app/platforms/windows/config.xml",
+		"/Users/woont/Desktop/test/phonegap/my_app/bower_components/font-awesome/less/path.less",
+		"/Users/woont/Desktop/test/phonegap/myApp/platforms/windows/www/index.html",
+		"/Users/woont/Desktop/test/phonegap/myApp/config.xml",
+		"/Users/woont/Desktop/test/phonegap/my_app/www/index.html",
+		"/Users/woont/Desktop/test/phonegap/myApp/www/index.html",
+		"/Users/woont/Desktop/test/mobileAngularUi/src/html/toggle.html",
+		"/Users/woont/Desktop/test/template/backend-angular-seed/master/gulpfile.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hiddenItem",
+			"type=\"hidden\"",
+			"submitInputs",
+			"submitInp",
+			"console",
+			"submitInput",
+			"submitInputS",
+			"submitInputs",
+			"submitInputS",
+			"submitInputs",
+			"data",
+			"Data",
+			"data",
+			"\">\n",
+			"webform-component-checkboxes",
+			"data",
+			"carousellModal",
+			"imgPath",
+			"data",
+			"append",
+			"getModels",
+			"content",
+			"http://rechargeac.hangar.agency/",
+			"outerHTML",
+			"inputFile",
+			"edit-submitted-file-ajax-wrapper",
+			"inputFile",
+			"fileSelector",
+			"fon",
+			"console",
+			"sidebar-page",
+			"text-color",
+			"ul",
+			"modal",
+			"appConfig",
+			"Container",
+			"modelContent",
+			"brandContent",
+			"Golf",
+			"html",
+			"testModule",
+			"select",
+			"this",
+			"brandContent",
+			"portLocatorContent",
+			"brandSelect",
+			"portLocatorContent",
+			"brands",
+			"currentBrand",
+			"currentModel",
+			"modelSelect",
+			"@import \"bootstrap/glyphicons",
+			"ico",
+			"Models",
+			"photosCollectionContent",
+			"newContent",
+			"/public/img/global/product-bg.png",
+			"stp__thumbs-sidebar",
+			"slick-initialized",
+			"selectedBrand",
+			"Brand",
+			"brand",
+			"Brand",
+			"tshow",
+			"handleOptionResponse",
+			"getOptions",
+			"lodash",
+			"h3",
+			"utils",
+			"thumb-info",
+			"armorall",
+			"*",
+			"mobile",
+			"img",
+			"col-sm-4",
+			"col-md-4 ",
+			"col-md-4",
+			"col-sm-4",
+			"tabpanel",
+			"arr",
+			"url",
+			"arr",
+			"armorall",
+			"console",
+			"callback",
+			"portLocatorSelect",
+			"span",
+			"bt",
+			"stp-form",
+			"required-title",
+			"b>",
+			"b",
+			"3",
+			"table-striped",
+			"color",
+			"table-striped",
+			"table",
+			"50",
+			"h3",
+			"ul",
+			"breadcrumb",
+			"sidebar__menu",
+			"active",
+			"white",
+			"about-us",
+			"breadcrumb",
+			"dark_leather_bg",
+			"body",
+			"div-cell",
+			".nav__dropdown-list",
+			"render",
+			"topnav__link",
+			"nav_hamburger",
+			"footer-legal",
+			"topnav__link",
+			"topnav",
+			"stp",
+			"STP",
+			"kss",
+			"ArmorAll",
+			"40",
+			"less",
+			"modifierMarkup",
+			"rootNumber",
+			"browser-sync",
+			"serve",
+			"server",
+			"kss"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rechargeac"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								616,
+								616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".jshintrc",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1147,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								676
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/client/app/customers/customer-detail.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2378,
+								2378
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gulptutorial.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"platform.css",
+				"platforms/ios/sampleGroceries/app/platform.css"
+			],
+			[
+				"login",
+				"app/views/login/login.xml"
+			],
+			[
+				"www/js/app",
+				"www/js/app.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/recharge_ac.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

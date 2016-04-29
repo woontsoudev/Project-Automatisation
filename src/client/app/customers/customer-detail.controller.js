@@ -5,9 +5,13 @@
         .module('app.customers')
         .controller('CustomerDetail', CustomerDetail);
 
+        function foo(){
+            var x = 1;
+        }
+
     CustomerDetail.$inject = ['$stateParams', '$window', 'dataservice', 'logger'];
     /* @ngInject */
-    function CustomerDetail($stateParams, $window, dataservice, logger) {
+    function CustomerDetail($stateParams, $window, dataservice, logger){
         var vm = this;
         vm.cancel = cancel;
         vm.customer = undefined;
@@ -29,7 +33,7 @@
             vm.customer = angular.copy(vm.original);
         }
 
-        function getCustomer(id) {
+        function getCustomer(id){
             return dataservice.getCustomer(id).then(function(data) {
                 vm.customer = data;
                 vm.original = angular.copy(vm.customer);
