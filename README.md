@@ -145,7 +145,49 @@ gulp.task('vet', function(){
 		])
 		.pipe(jscs())
 		.pipe(jshint()) 
-		.pipe(jshint.reporter('jshint-stylish', {verbose: true}));
+		.pipe(jshint.reporter('jshint-stylish', {verbose: true})); // create a report more user friendly
 });
 ```
 > Run `npm install --save-dev jshint-stylish` to install the jshint plugin
+
+##### Create a reusable functions.
+
+Create a reusable function called 'log'.
+
+```javascript
+function log(msg){
+	if(typeof(msg) === 'object'){
+		for(var item in msg){
+			if(msg.hasOwnProperty(item)){
+				util.log(util.color.blue(msg[item])); // Util property is a gulp plugin, this plugin print all the messages with the color seted
+			}
+		}
+	} else {
+		util.log(util.colors.blue(msg));
+	}
+}
+```
+
+Now call this function from your task.
+
+```javascript
+gulp.task('vet', function(){
+	log('welcome to your reusable function'); // This log was show every time we run the vet task
+	return gulp
+						.src(['./src/**/*.js',
+							'./*.js'
+						])
+						.pipe(jscs())
+						.pipe(jshint()) 
+						.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+						.pipe(jshint.reporter('fail'));
+});
+```
+> Run `npm install --save-dev gulp-util` to install the util plugin to your project. Remember, you need to require the plugin in the gulpfile using `require()`
+
+```javascript
+var gulp = require('gulp');
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
+var util = require('gulp-util'); // here its the new plugin added
+```
