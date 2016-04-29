@@ -152,7 +152,7 @@ gulp.task('vet', function(){
 
 ##### Create a reusable functions.
 
-Create a reusable function called 'log'.
+Create a reusable function called 'log' .
 
 ```javascript
 function log(msg){
