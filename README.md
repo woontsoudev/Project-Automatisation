@@ -173,14 +173,15 @@ Now call this function from your task.
 ```javascript
 gulp.task('vet', function(){
 	log('welcome to your reusable function'); // This log was show every time we run the vet task
-	return gulp
-						.src(['./src/**/*.js',
-							'./*.js'
-						])
-						.pipe(jscs())
-						.pipe(jshint()) 
-						.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
-						.pipe(jshint.reporter('fail'));
+	return
+		gulp
+			.src(['./src/**/*.js',
+				'./*.js'
+			])
+			.pipe(jscs())
+			.pipe(jshint()) 
+			.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+			.pipe(jshint.reporter('fail'));
 });
 ```
 > Run `npm install --save-dev gulp-util` to install the util plugin to your project. Remember, you need to require the plugin in the gulpfile using `require()`
