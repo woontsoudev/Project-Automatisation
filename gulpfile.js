@@ -1,7 +1,6 @@
 var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
-var util = require('gulp-util');
+var args = require('yargs').argv;
+var $ = require('gulp-load-plugins')({lazy: true});
 
 gulp.task('vet', function(){
 	log('tomela');
@@ -9,10 +8,11 @@ gulp.task('vet', function(){
 						.src(['./src/**/*.js',
 							'./*.js'
 						])
-						.pipe(jscs())
-						.pipe(jshint()) 
-						.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
-						.pipe(jshint.reporter('fail'));
+						.pipe($.if(args.verbose, $.print()))
+						.pipe($.jscs())
+						.pipe($.jshint()) 
+						.pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
+						.pipe($.jshint.reporter('fail'));
 });
 
 ///////////////
@@ -21,10 +21,10 @@ function log(msg){
 	if(typeof(msg) === 'object'){
 		for(var item in msg){
 			if(msg.hasOwnProperty(item)){
-				util.log(util.color.blue(msg[item]));
+				$.util.log($.util.color.blue(msg[item]));
 			}
 		}
 	} else {
-		util.log(util.colors.blue(msg));
+		$.util.log($.util.colors.blue(msg));
 	}
 }

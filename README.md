@@ -192,3 +192,107 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var util = require('gulp-util'); // here its the new plugin added
 ```
+
+> Add a fail reporter to your task `.pipe(jshint.reporter('fail'));`
+
+```javascript
+gulp.task('vet', function(){
+	log('tomela');
+	return gulp
+						.src(['./src/**/*.js',
+							'./*.js'
+						])
+						.pipe(jscs())
+						.pipe(jshint()) 
+						.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+						.pipe(jshint.reporter('fail')); // the task will be fail if jshint have an error
+});
+```
+
+##### Conditionally displayin the source files
+
+Install gulp print `npm install --save-dev gulp-print` and pipe in your task after src
+
+> Require the plugin in your gulp file `var gulpprint = require('gulp-print')` and add in your task `.pipe(gulpprint())`
+
+You need to control when the files are printed, install `npm install --save-dev gulp-if yargs`
+
+> Require the plugin `var gulpif = require(gulp-if);` and `var args = require('yargs').argv;`. Them add the conditional to your task `.pipe(gulpif(args.verbose, gulpprint()))`
+
+Now you can run `gulp ver --verbose` to see the files. Now your gulp file look like this:
+
+```javascript
+var gulp = require('gulp');
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
+var util = require('gulp-util');
+var gulpprint = require('gulp-print'); // this print the working files task 
+var gulpif = require('gulp-if'); // conditional plugin
+var args = require('yargs').argv; // this plugin help us to pass args in the commmand line
+
+gulp.task('vet', function(){
+	log('tomela');
+	return gulp
+						.src(['./src/**/*.js',
+							'./*.js'
+						])
+						.pipe(gulpif(args.verbose, gulpprint())) // the task show the files only if you use --verbose
+						.pipe(jscs())
+						.pipe(jshint()) 
+						.pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+						.pipe(jshint.reporter('fail'));
+});
+
+///////////////
+
+function log(msg){
+	if(typeof(msg) === 'object'){
+		for(var item in msg){
+			if(msg.hasOwnProperty(item)){
+				util.log(util.color.blue(msg[item]));
+			}
+		}
+	} else {
+		util.log(util.colors.blue(msg));
+	}
+}
+```
+
+##### Lazy loading gulp plugins
+
+Clean your task using gulp-load-plugins, install `npm install --save-dev gulp-load-plugins`.
+
+> Add `var $ = require('gulp-load-plugins')({lazy: true})` and replace all the plugin names with '$'
+
+```javascript
+var gulp = require('gulp');
+var args = require('yargs').argv;
+var $ = require('gulp-load-plugins')({lazy: true});
+
+gulp.task('vet', function(){
+	log('tomela');
+	return gulp
+						.src(['./src/**/*.js',
+							'./*.js'
+						])
+						.pipe($.if(args.verbose, $.print()))
+						.pipe($.jscs())
+						.pipe($.jshint()) 
+						.pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
+						.pipe($.jshint.reporter('fail'));
+});
+
+///////////////
+
+function log(msg){
+	if(typeof(msg) === 'object'){
+		for(var item in msg){
+			if(msg.hasOwnProperty(item)){
+				$.util.log($.util.color.blue(msg[item]));
+			}
+		}
+	} else {
+		$.util.log($.util.colors.blue(msg));
+	}
+}
+```

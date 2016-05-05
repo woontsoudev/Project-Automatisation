@@ -284,22 +284,6 @@
 	"buffers":
 	[
 		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 618,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".jshintrc",
-			"settings":
-			{
-				"buffer_size": 1147,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "package.json",
 			"settings":
 			{
@@ -308,10 +292,10 @@
 			}
 		},
 		{
-			"file": "src/client/app/customers/customer-detail.controller.js",
+			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 1649,
+				"buffer_size": 618,
 				"line_ending": "Unix"
 			}
 		},
@@ -319,7 +303,15 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 2379,
+				"buffer_size": 5822,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/client/app/customers/customer-detail.controller.js",
+			"settings":
+			{
+				"buffer_size": 1648,
 				"line_ending": "Unix"
 			}
 		}
@@ -435,12 +427,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa"
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app/customers"
 	],
 	"file_history":
 	[
-		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
 		"/Users/woont/Desktop/tutorials/gulp-johnpapa/README.md",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app/customers/customer-detail.controller.js",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/package.json",
+		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/Default (OSX).sublime-keymap",
 		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/server/db.json",
 		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/public/_scss/theme/components/bootstrap/_modal.scss",
 		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss",
@@ -563,10 +562,7 @@
 		"/Users/woont/Desktop/test/phonegap/my_app/bower_components/font-awesome/less/path.less",
 		"/Users/woont/Desktop/test/phonegap/myApp/platforms/windows/www/index.html",
 		"/Users/woont/Desktop/test/phonegap/myApp/config.xml",
-		"/Users/woont/Desktop/test/phonegap/my_app/www/index.html",
-		"/Users/woont/Desktop/test/phonegap/myApp/www/index.html",
-		"/Users/woont/Desktop/test/mobileAngularUi/src/html/toggle.html",
-		"/Users/woont/Desktop/test/template/backend-angular-seed/master/gulpfile.js"
+		"/Users/woont/Desktop/test/phonegap/my_app/www/index.html"
 	],
 	"find":
 	{
@@ -585,6 +581,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<<<<<<< HEAD",
 			"hiddenItem",
 			"type=\"hidden\"",
 			"submitInputs",
@@ -711,8 +708,7 @@
 			"rootNumber",
 			"browser-sync",
 			"serve",
-			"server",
-			"kss"
+			"server"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -731,70 +727,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								616,
-								616
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": ".jshintrc",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1147,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
@@ -806,8 +743,8 @@
 						"selection":
 						[
 							[
-								860,
-								676
+								509,
+								509
 							]
 						],
 						"settings":
@@ -824,20 +761,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/client/app/customers/customer-detail.controller.js",
+					"buffer": 1,
+					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1649,
+						"buffer_size": 618,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								130,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5822,
+								5822
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2007.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/client/app/customers/customer-detail.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
 							]
 						],
 						"settings":
@@ -845,34 +840,6 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2378,
-								2378
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -955,7 +922,7 @@
 		[
 			[
 				"",
-				"~/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/recharge_ac.sublime-project"
+				"~/Desktop/work/daggerwin/daggerwing-hepc-app/hepc.sublime-project"
 			]
 		],
 		"width": 380.0
