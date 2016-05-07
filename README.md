@@ -267,7 +267,7 @@ Clean your task using gulp-load-plugins, install `npm install --save-dev gulp-lo
 ```javascript
 var gulp = require('gulp');
 var args = require('yargs').argv;
-var $ = require('gulp-load-plugins')({lazy: true});
+var $ = require('gulp-load-plugins')({lazy: true}); // All the gulp plugins was replaced with this line
 
 gulp.task('vet', function(){
 	log('tomela');
@@ -296,3 +296,46 @@ function log(msg){
 	}
 }
 ```
+
+#### Rusable configuration module
+
+Create a new file called `gulp.config.js`, them create a module to return a config with the source of all files needed in your task.
+
+```javascript
+module.exports = function() {
+  var config = {
+    alljs: [
+      './src/**/*.js',
+      './*.js'
+    ]
+  };
+  return config;
+};
+```
+
+Modify your gulp.js file to use a config file.
+
+> Change the 'src' of your task to `.src(config.alljs)`... and import your config module to your task `var config = require('./gulp.config')();`
+
+Your task should look as follows:
+
+```javascript
+var gulp = require('gulp');
+var args = require('yargs').argv;
+var config = require('./gulp.config')(); // this task need to be execute immediately with '()'
+
+var $ = require('gulp-load-plugins')({lazy: true});
+
+gulp.task('vet', function(){
+	log('tomela');
+	return gulp
+					.src(config.alljs) // now you only need to call the config array to use it 
+					.pipe($.if(args.verbose, $.print()))
+					.pipe($.jscs())
+					.pipe($.jshint()) 
+					.pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
+					.pipe($.jshint.reporter('fail'));
+});
+```
+
+
