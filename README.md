@@ -338,4 +338,121 @@ gulp.task('vet', function(){
 });
 ```
 
+#### CSS compilation
+
+##### Creating a Less and AutoPrefixer gulp task
+
+First install the plugins needed to your task.
+
+> Run `npm install --save-dev gulp-less gulp-autoprefixer`
+
+NOTE: actually you don't need to use `var less = require('gulp-less')`, because we was installed the gulp load plugins
+
+Create a task called 'styles'.
+
+```javascript
+gulp.task('styles' function() {
+	log('Compiling Less --> CSS');
+	return gulp 
+					.src(config.less) // remember add the path in your 'gulp.config.js' file
+					.pipe($.less()) // pipe the less plugin in your task
+					.pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']})) // this add the browser prefixes to make our app cross browsing
+					.pipe(gulp.dest(config.temp));
+});
+```
+
+Add the path for your less files in the `gulp.config.js` file.
+
+```javascript
+module.exports = function() {
+  var client = './src/client/'; // Set a default path for our client directory
+  var config = {
+    temp: './.tmp/', // Make a temp folder to our temporally files its a good practice.
+    alljs: [
+      './src/**/*.js',
+      './*.js'
+    ],
+    less: client + 'styles/styles.less' // you can use '[]' to add multiple paths
+  };
+
+  return config;
+};
+```
+
+##### Deleating files in a dependency task
+
+First install the gulp package DEL.
+
+> Run `npm install del --save-dev`
+
+NOTE: This module its not a gulp plugin, for this reason we need to require the module.
+
+```javscript
+var del = require('del');
+``` 
+
+Define a reusable function called 'clean'
+
+```javascript
+function clean(path, done) { // Use a calback function called 'done' to ensure when the task start first clean the temp directory
+	log('Cleaning: ' + $.util.colors.blue(path));
+	del(path).then(function() {
+		done(); // In this case use a promise. https://github.com/johnpapa/pluralsight-gulp/issues/24
+	});
+}
+```
+
+NOTE: The del module was updated and now use a promise instead of callback. `https://github.com/johnpapa/pluralsight-gulp/issues/24`
+
+Create a task for cleaning all the styles.
+
+```javascript
+gulp.task('clean-styles', function(done) {
+	var files = config.temp + '**/*.css';
+	clean(files, done);
+});
+```
+
+Now add the cleaning task as a subtask for styles task
+
+```javascript
+gulp.task('styles', ['clean-styles'], function() { // Remember all the subtask run first
+	log('Compiling Less --> CSS');
+	return gulp 
+					.src(config.less)
+					.pipe($.plumber())
+					.pipe($.less())
+					.pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']}))
+					.pipe(gulp.dest(config.temp));
+});
+```
+
+##### Creating a watch task
+
+Create a new task called 'less-watcher', this task its going to watch all the changes on our less files.
+
+```javascript
+gulp.task('less-watcher', function() {
+	gulp.watch([config.less], ['styles']);
+});
+```
+##### Handling errors using gulp-plumber
+
+Install the gulp-plumber plugin
+
+> run `npm install --save-dev gulp-plumber`
+
+Now add gulp-plumber plugin to your styles task.
+
+```javascript
+gulp.task('styles', ['clean-styles'], function() {
+	log('Compiling Less --> CSS');
+	return gulp 
+					.src(config.less)
+					.pipe($.plumber()) // Here the plumber plugins check for errors
+					.pipe($.less())
+					.pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']}))
+					.pipe(gulp.dest(config.temp));
+});
+```
 
