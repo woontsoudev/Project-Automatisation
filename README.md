@@ -338,7 +338,7 @@ gulp.task('vet', function(){
 });
 ```
 
-#### CSS compilation
+## CSS compilation
 
 ##### Creating a Less and AutoPrefixer gulp task
 
