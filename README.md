@@ -23,7 +23,7 @@ $ npm start
 ```
 
 # NOTES
-======
+***
 ## 4 Things you need to know about gulp
 We have four API's in gulp "gulp.task, gulp.src, gulp.dest, gulp.watch"
 
