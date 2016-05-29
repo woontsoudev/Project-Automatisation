@@ -575,7 +575,7 @@ In your .bowerrc file add a `postinstall script` something like this:
 #### Injecting the custom css
 
 Create a new task called `inject`
-
+```javascript
 gulp.task('inject', ['wiredep', 'styles'], function() {
 	log('Wire up the app css into the html, and call wiredep');
 	return gulp
@@ -583,7 +583,7 @@ gulp.task('inject', ['wiredep', 'styles'], function() {
 		.pipe($.inject(gulp.src(config.css)))
 		.pipe(gulp.dest(config.client));
 });
-
+```
 Modify the gulp.config.js file:
 
 ```javascript
