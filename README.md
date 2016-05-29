@@ -548,17 +548,17 @@ module.exports = function() {
 Go to your index.html and replace the bower.css files to this:
 
 > <!-- bower:css -->
-<!-- endbower -->
+> <!-- endbower -->
 
 Replace the bower.js files to this:
 
 > <!-- bower:js -->
-<!-- endbower -->
+> <!-- endbower -->
 
 Make the same with the custom files but you need to use gulp-inject instead of wiredep
 
 > <!-- inject:js -->
-<!-- endinject -->
+> <!-- endinject -->
 
 #### Adding bower files automatically on install
 
