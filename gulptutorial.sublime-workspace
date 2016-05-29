@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"clie",
+				"clientApp"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
 				"su",
 				"submitInput"
 			],
@@ -284,10 +292,18 @@
 	"buffers":
 	[
 		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 14146,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 974,
+				"buffer_size": 1141,
 				"line_ending": "Unix"
 			}
 		},
@@ -295,32 +311,35 @@
 			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 660,
+				"buffer_size": 1639,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "gulp.config.js",
 			"settings":
 			{
-				"buffer_size": 8714,
+				"buffer_size": 835,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/client/app/customers/customer-detail.controller.js",
+			"file": "src/client/index.html",
 			"settings":
 			{
-				"buffer_size": 1648,
+				"buffer_size": 4004,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  📣 Version 2.1.6\n  ********************************************************************************\n  \n  🏮 BUG FIXES\n  \n    ➼ Fix php block entity name (8a3e881)\n  \n  \n  🏮 FEATURES\n  \n    ➼ Now you can check the official changelog\n    ➼ Add settings for multiple language extensions (7d57cb8)\n    ➼ Add a lot of new file icons and update the old ones (933dedf)\n  \n  \n  ********************************************************************************\n  Check the official changelog ( https://github.com/equinusocio/material-theme/blob/develop/CHANGELOG.md  )\n",
 			"settings":
 			{
-				"buffer_size": 871,
-				"line_ending": "Unix"
+				"buffer_size": 728,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -331,10 +350,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 147.0,
-		"last_filter": "jshi",
+		"height": 354.0,
+		"last_filter": "mar",
 		"selected_items":
 		[
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"jshi",
 				"JSHint"
@@ -412,7 +439,7 @@
 				"Set Syntax: Shell Script (Bash)"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -435,17 +462,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa",
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src",
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client",
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app",
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app/customers"
+		"/Users/woont/Desktop/study/gulp-johnpapa",
+		"/Users/woont/Desktop/study/gulp-johnpapa/src",
+		"/Users/woont/Desktop/study/gulp-johnpapa/src/client",
+		"/Users/woont/Desktop/study/gulp-johnpapa/src/client/tests",
+		"/Users/woont/Desktop/study/gulp-johnpapa/src/client/tests/server-integration"
 	],
 	"file_history":
 	[
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/README.md",
-		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app/customers/customer-detail.controller.js",
 		"/Users/woont/Desktop/tutorials/gulp-johnpapa/package.json",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/app/customers/customer-detail.controller.js",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/client/styles/styles.less",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/.tmp/foo.css",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/src/foocss",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/.tmp/styles.css",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/.gitignore",
+		"/Users/woont/Desktop/tutorials/gulp-johnpapa/README.md",
 		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
 		"/Users/woont/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/Default (OSX).sublime-keymap",
 		"/Users/woont/Desktop/work/recharge_ac/mp-recharge-ac-site/frontend/server/db.json",
@@ -565,16 +597,11 @@
 		"/Users/woont/Desktop/work/daggerwin/app-demo/daggerwing-app/src/html/index.html",
 		"/Users/woont/Desktop/test/phonegap/my_app/src/html/index.html",
 		"/Users/woont/Desktop/work/daggerwin/app-demo/daggerwing-app/bower_components/font-awesome/less/path.less",
-		"/Users/woont/Desktop/test/phonegap/my_app/config.xml",
-		"/Users/woont/Desktop/test/phonegap/my_app/platforms/windows/config.xml",
-		"/Users/woont/Desktop/test/phonegap/my_app/bower_components/font-awesome/less/path.less",
-		"/Users/woont/Desktop/test/phonegap/myApp/platforms/windows/www/index.html",
-		"/Users/woont/Desktop/test/phonegap/myApp/config.xml",
-		"/Users/woont/Desktop/test/phonegap/my_app/www/index.html"
+		"/Users/woont/Desktop/test/phonegap/my_app/config.xml"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -589,6 +616,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#####",
 			"<<<<<<< HEAD",
 			"hiddenItem",
 			"type=\"hidden\"",
@@ -715,8 +743,7 @@
 			"modifierMarkup",
 			"rootNumber",
 			"browser-sync",
-			"serve",
-			"server"
+			"serve"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -735,28 +762,59 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 974,
+						"buffer_size": 14146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								509,
-								509
+								14143,
+								14143
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7829.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -765,30 +823,62 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 660,
+						"buffer_size": 1639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								1244,
+								1244
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "gulp.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -798,54 +888,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "README.md",
+					"buffer": 4,
+					"file": "src/client/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8714,
+						"buffer_size": 4004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8713,
-								8713
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3797.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/client/app/customers/customer-detail.controller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								248,
-								248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -853,35 +915,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": ".gitignore",
+					"buffer": 5,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 871,
+						"buffer_size": 728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								871,
-								871
+								728,
+								728
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 393.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

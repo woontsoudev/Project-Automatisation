@@ -340,7 +340,7 @@ gulp.task('vet', function(){
 
 ## CSS compilation
 
-##### Creating a Less and AutoPrefixer gulp task
+#### Creating a Less and AutoPrefixer gulp task
 
 First install the plugins needed to your task.
 
@@ -379,7 +379,7 @@ module.exports = function() {
 };
 ```
 
-##### Deleating files in a dependency task
+#### Deleating files in a dependency task
 
 First install the gulp package DEL.
 
@@ -427,7 +427,7 @@ gulp.task('styles', ['clean-styles'], function() { // Remember all the subtask r
 });
 ```
 
-##### Creating a watch task
+#### Creating a watch task
 
 Create a new task called 'less-watcher', this task its going to watch all the changes on our less files.
 
@@ -436,7 +436,7 @@ gulp.task('less-watcher', function() {
 	gulp.watch([config.less], ['styles']);
 });
 ```
-##### Handling errors using gulp-plumber
+#### Handling errors using gulp-plumber
 
 Install the gulp-plumber plugin
 
@@ -455,4 +455,176 @@ gulp.task('styles', ['clean-styles'], function() {
 					.pipe(gulp.dest(config.temp));
 });
 ```
+
+## HTML Injection
+
+#### Exploring wiredep and gulp-inject
+
+Install wiredep and gulp-inject
+> Run `npm install --save-dev wiredep gulp-inject`
+
+Use these tools to include all our bower files and custom js and css
+
+<html>
+	<head>
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- inject:css -->
+		<!-- endinject -->
+	</head>
+	<body>
+		<!-- bower:js -->
+		<!-- endbower -->
+		<!-- inject:js -->
+		<!-- endinject -->
+	</body>
+</html>
+
+Use wiredep to include all the bower files, bower js or css
+> Wiredep `<!-- bower:type -->`
+
+Use gulp-inject to include all the custom js and css code
+> gulp-inject `<!-- inject:type -->`
+
+#### Adding bower files and your javascript to the HTML
+
+Create a task called 'wiredep'
+
+```javascript
+gulp.task('wiredep', function() {
+	var options = config.getWiredepDefaultOptions();
+	var wiredep = require('wiredep').stream;
+	return gulp
+		.src(config.index)
+		.pipe(wiredep(options))
+		.pipe($.inject(gulp.src(config.js)))
+		.pipe(gulp.dest(config.client));
+});
+```
+
+Modify the gulp.config.js file to:
+
+```javascript
+module.exports = function() {
+  var client = './src/client/';
+  var clientApp = client + 'app/'; // set the app directory
+  var config = {
+    temp: './.tmp/',
+    alljs: [
+      './src/**/*.js',
+      './*.js'
+    ],
+    client: client, 
+    index: client + 'index.html',
+    js : [
+      clientApp + '**/*.module.js',
+      clientApp + '**/*.js',
+      '!' + clientApp + '**/*.spec.js'
+    ],
+    less: client + 'styles/styles.less',
+    /**
+      * Bower and NPM locations
+    **/
+    bower: {
+      json: require('./bower.json'),
+      directory: './bower_components/',
+      ignorePath: '../..'
+    }
+  };
+  config.getWiredepDefaultOptions = function() {
+    var options = {
+      bowerJson: config.bower.json,
+      directory: config.bower.directory,
+      ignorePath: config.bower.ignorePath
+    };
+    return options;
+  };
+  return config;
+};
+```
+
+#### Remove the scrips and styles from your main HTML
+
+Go to your index.html and replace the bower.css files to this:
+
+<!-- bower:css -->
+<!-- endbower -->
+
+Replace the bower.js files to this:
+
+<!-- bower:js -->
+<!-- endbower -->
+
+Make the same with the custom files but you need to use gulp-inject instead of wiredep
+
+<!-- inject:js -->
+<!-- endinject -->
+
+#### Adding bower files automatically on install
+
+In your .bowerrc file add a `postinstall script` something like this:
+
+```javascript
+{
+  "directory": "bower_components",
+  "scripts": {
+    "postinstall": "gulp wiredep" // this run every time you install a bower package
+  }
+}
+```
+#### Injecting the custom css
+
+Create a new task called `inject`
+
+gulp.task('inject', ['wiredep', 'styles'], function() {
+	log('Wire up the app css into the html, and call wiredep');
+	return gulp
+		.src(config.index)
+		.pipe($.inject(gulp.src(config.css)))
+		.pipe(gulp.dest(config.client));
+});
+
+Modify the gulp.config.js file:
+
+```javascript
+module.exports = function() {
+  var client = './src/client/';
+  var clientApp = client + 'app/';
+  var temp = './.tmp/'; // expose a temp folder in a variable to use in our config object
+  var config = {
+    temp: temp,
+    alljs: [
+      './src/**/*.js',
+      './*.js'
+    ],
+    client: client,
+    css: temp + 'styles.css', // add the css path to our gulp config
+    index: client + 'index.html',
+    js : [
+      clientApp + '**/*.module.js',
+      clientApp + '**/*.js',
+      '!' + clientApp + '**/*.spec.js'
+    ],
+    less: client + 'styles/styles.less',
+    /**
+      * Bower and NPM locations
+    **/
+    bower: {
+      json: require('./bower.json'),
+      directory: './bower_components/',
+      ignorePath: '../..'
+    }
+  };
+  config.getWiredepDefaultOptions = function() {
+    var options = {
+      bowerJson: config.bower.json,
+      directory: config.bower.directory,
+      ignorePath: config.bower.ignorePath
+    };
+    return options;
+  };
+  return config;
+};
+```
+
 
