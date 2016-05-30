@@ -65,6 +65,12 @@ gulp.task('js', ['jscs', 'jshint'], function() {
 })
 ```
 
+### Gulp src
+
+### Gulp dest
+
+### Watch
+
 # Projects automation
 
 ## 1. Installing packages globally for your project
