@@ -65,6 +65,12 @@ gulp.task('js', ['jscs', 'jshint'], function() {
 })
 ```
 
+### Gulp src
+
+### Gulp dest
+
+### Watch
+
 # Projects automation
 
 ## 1. Installing packages globally for your project
@@ -547,18 +553,18 @@ module.exports = function() {
 
 Go to your index.html and replace the bower.css files to this:
 
-<!-- bower:css -->
-<!-- endbower -->
+> start: <!-- bower:css -->
+> end: <!-- endbower -->
 
 Replace the bower.js files to this:
 
-<!-- bower:js -->
-<!-- endbower -->
+> start: <!-- bower:js -->
+> end: <!-- endbower -->
 
 Make the same with the custom files but you need to use gulp-inject instead of wiredep
 
-<!-- inject:js -->
-<!-- endinject -->
+> start: <!-- inject:js -->
+> end: <!-- endinject -->
 
 #### Adding bower files automatically on install
 
@@ -575,7 +581,7 @@ In your .bowerrc file add a `postinstall script` something like this:
 #### Injecting the custom css
 
 Create a new task called `inject`
-
+```javascript
 gulp.task('inject', ['wiredep', 'styles'], function() {
 	log('Wire up the app css into the html, and call wiredep');
 	return gulp
@@ -583,7 +589,7 @@ gulp.task('inject', ['wiredep', 'styles'], function() {
 		.pipe($.inject(gulp.src(config.css)))
 		.pipe(gulp.dest(config.client));
 });
-
+```
 Modify the gulp.config.js file:
 
 ```javascript
